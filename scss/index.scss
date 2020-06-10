@@ -1,0 +1,266 @@
+//специфікація
+
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color:white !important;
+}
+
+%general-text-prop{
+    text-shadow: 2px 2px 5px black;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+%secondary-text-rpop{
+    text-shadow: 2px 2px 5px black;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+a:hover{
+    color: white;
+}
+
+%btn-opions{
+    border:1px solid rgba(255,255,255,0.3); 
+    padding: 20px 20px; 
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none !important; 
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+//навігація
+.navbar{
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar-brad img{
+    width: 150px;
+}
+
+.bg-dark{
+    background: rgba(0,0,0,0.5) !important;
+}
+.sotial{
+    width: 60px !important;
+    padding-right: 20px;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+//перший блок
+
+.first_bg{
+    background-image: url(../assets/index_page/index_first_container_background.jpg) !important;
+    height: 100vh;
+    background-size: cover;
+}
+
+.first_container{
+    height: 100vh;
+}
+
+.first-container-text{
+    // text-shadow: 2px 2px 5px black;
+    margin-bottom: 200px;
+    margin-right: 50px;
+    &__general{
+        @extend %general-text-prop;
+    }
+    &__secondary{
+        @extend %secondary-text-rpop;
+    }
+}
+
+.promo{
+    border: 2px rgba(255,255,255,0.3) solid;
+    margin-top: 300px;
+    margin-left: 50px;
+    width: 90%;
+    // margin-top: 200px;
+}
+
+//слайдер (другий блок)
+
+.p-0{
+    padding: 0;
+}
+
+.btn__red{
+    @extend %btn-opions;
+    background-color: brown;
+    font-size: 35px;
+}
+
+.carousel-text{
+    &__general{
+        text-shadow: 2px 2px 5px black;
+        font-weight: 700;
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+}
+
+.first-slide{
+    padding-bottom: 150px;
+}
+
+//третій блок
+
+.third_bg{
+    background-image: url(../assets/index_page/third_container_background.jpg) !important;
+    height: 100vh;
+    background-size: cover;
+}
+
+.third-container-text{
+    &__general{
+        @extend %general-text-prop;
+        margin-bottom: 50px;
+        margin-top: 150px;
+    }
+}
+
+//четвертий блок
+
+.fourth_bg{
+    background-color: #969696;
+    background-size: cover;
+}
+
+.fourth-container-text__general{
+    @extend %general-text-prop;
+    color: white;
+    font-size: 45px;
+}
+
+.fourth-container-text__secondary{
+    text-align: center;
+    @extend %secondary-text-rpop;
+    color: white;
+    font-size: 45px;
+    text-shadow: none;
+}
+
+.arrow{
+    padding-left: 15px;
+    width: 20%;
+    transform: rotate(36deg);
+}
+
+.map{
+    padding: 0;
+}
+
+//підвал
+
+.author{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.footer{
+    height: 15%;
+    &__bg{
+        background-color: #181818;
+        width: 100%;
+        background-size: cover;
+    }
+    &__text{
+        color: white;
+    }
+    &__links{
+        color: white;
+    }
+    &__links:hover{
+        color: white;
+        text-decoration: none;
+    }
+    &__phone{
+        margin-top: 45px;
+        color: white;
+        &__img{
+            width: 30px;
+        }
+    }
+}
+
+//Допомога
+
+.help_first_bg{
+    background-image: url(../assets/help_page/background.jpg) !important;
+    height: 100vh;
+    background-size: cover;
+}
+
+.help_inputs{
+    width: 60vw;
+}
+
+.help__btn{
+    margin-top: 50px;
+    &__blue{
+        text-align: center;
+        @extend %btn-opions;
+        background-color: blue;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+//Послуги
+//Перший контейнер
+
+.order_first_bg{
+    background-image: url(../assets/order_page/firts_container_background.jpg) !important;
+    height: 100vh;
+    background-size: cover;
+}
+
+.order-text__general{
+    @extend %general-text-prop;
+    font-size: 30px;
+}
+
+.order-text__secondary{
+    @extend %secondary-text-rpop;
+    font-size: 25px;
+}
+
+.download{
+    margin: 30px;
+    &__btn{
+        margin: 30px;
+        @extend %btn-opions;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 35px;
+        background-color: brown;
+        &__img{
+            width: 40px;
+        }
+    }
+}
+
+//enter page
+.enter_bg{
+    background-image: url(../assets/enter_page/enter_bg_try.jpg) !important;
+    height: 100vh;
+    background-size: cover;
+}
+
