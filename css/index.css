@@ -2,8 +2,10 @@ body, html {
   width: 100%;
   height: 100%;
   padding: 0;
+  margin: 0;
   font-family: "Lato", sans-serif;
   color: white !important;
+  overflow-x: hidden;
 }
 
 .order-text__general, .fourth-container-text__general, .third-container-text__general, .first-container-text__general {
@@ -59,7 +61,7 @@ a:hover {
   font-size: 1.1em !important;
 }
 
-.first_bg {
+#first_bg {
   background-image: url(../assets/index_page/index_first_container_background.jpg) !important;
   height: 100vh;
   background-size: cover;
@@ -70,14 +72,17 @@ a:hover {
 }
 
 .first-container-text {
-  margin-bottom: 200px;
-  margin-right: 50px;
+  margin-left: 15%;
+}
+.first-container-text__general {
+  margin-top: 25%;
+  margin-right: 2em;
 }
 .promo {
   border: 2px rgba(255, 255, 255, 0.3) solid;
-  margin-top: 300px;
-  margin-left: 50px;
+  margin-top: 45%;
   width: 90%;
+  margin-right: 15%;
 }
 
 .p-0 {
@@ -100,7 +105,7 @@ a:hover {
   padding-bottom: 150px;
 }
 
-.third_bg {
+#third_bg {
   background-image: url(../assets/index_page/third_container_background.jpg) !important;
   height: 100vh;
   background-size: cover;
@@ -135,6 +140,7 @@ a:hover {
 }
 
 .map {
+  margin-right: 15%;
   padding: 0;
 }
 
@@ -169,7 +175,7 @@ a:hover {
   width: 30px;
 }
 
-.help_first_bg {
+#help_first_bg {
   background-image: url(../assets/help_page/background.jpg) !important;
   height: 100vh;
   background-size: cover;
@@ -190,7 +196,7 @@ a:hover {
   transform: translate(-50%, 0);
 }
 
-.order_first_bg {
+#order_first_bg {
   background-image: url(../assets/order_page/firts_container_background.jpg) !important;
   height: 100vh;
   background-size: cover;
@@ -219,7 +225,70 @@ a:hover {
   width: 40px;
 }
 
-.enter_bg {
+#order_second_bg {
+  background-image: url(../assets/order_page/second_container_background.jpg) !important;
+  height: 100vh;
+  background-size: cover;
+}
+
+#order_third_bg {
+  background-image: url(../assets/order_page/pro.jpg) !important;
+  height: 100vh;
+  background-size: cover;
+}
+
+#order_fourth_bg {
+  background-image: url(../assets/order_page/vip.jpg) !important;
+  height: 100vh;
+  background-size: cover;
+}
+
+.card {
+  margin: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.card-title .card-text {
+  font-family: "Lato", sans-serif !important;
+  color: white !important;
+  text-shadow: 2px 2px black;
+  font-weight: 400;
+}
+
+.card-img-top {
+  padding: 7px;
+}
+
+#order_title {
+  margin-top: 7em;
+}
+
+.order_btn {
+  padding: 7px;
+  text-align: center;
+  border: 1px solid rgba(133, 133, 133, 0.3);
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px black;
+  background-color: blue;
+  position: relative;
+  transform: translate(-50%, 0);
+}
+
+.order_init {
+  padding: 7px;
+  font-family: "Lato", sans-serif !important;
+  color: white !important;
+  text-shadow: 2px 2px black;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#enter_bg {
   background-image: url(../assets/enter_page/enter_bg_try.jpg) !important;
   height: 100vh;
   background-size: cover;
